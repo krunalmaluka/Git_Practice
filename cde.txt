@@ -1,0 +1,11 @@
+server {
+        listen 8085;
+        server_name application.com;
+        root /var/www/applcation;
+        index application.index.html;
+        location / {
+              try_files $uri $uri/ =404;
+       }
+}       
+
+
